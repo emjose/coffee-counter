@@ -158,12 +158,16 @@ Counter
 */
 
 main {
-  min-height: 100vh;
+  min-height: 150vh;
   display: grid;
   place-items: center;
 }
+/* default min-height: 100vh */
+
 .container {
   text-align: center;
+  background: rgb(187, 174, 174, 0.5);
+  width: 25rem;
 }
 #value {
   font-size: 6rem;
@@ -183,6 +187,7 @@ main {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
   border-radius: var(--radius);
   margin: 0.5rem;
+  outline: none;
 }
 .btn:hover {
   color: var(--clr-white);
