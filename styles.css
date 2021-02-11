@@ -172,6 +172,7 @@ main {
 #value {
   font-size: 6rem;
   font-weight: bold;
+  color: blue;
 }
 .btn {
   text-transform: uppercase;
@@ -192,4 +193,78 @@ main {
 .btn:hover {
   color: var(--clr-white);
   background: var(--clr-black);
+}
+
+.wrapper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.video-container:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  content: "";
+  width: 100%;
+  height: 100%;
+}
+
+.video-container video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100vw;
+  height: 56.25vw;
+  min-width: 177.6vh;
+  min-height: 100vh;
+  transform: translate(-50%, -50%);
+}
+
+.video-overlay {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  margin: 0%;
+  padding: 15px 15px;
+  border-radius: 20px;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.35);
+  box-shadow: 0 8px 32px 0 rgba(185, 185, 185, 0.37);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  flex-direction: column;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+h1 {
+  margin: 0;
+}
+
+h1 span {
+  color: #ff0000;
+}
+
+p {
+  margin-top: 10px;
+  font-weight: 100;
+  text-decoration: capitalize;
 }
