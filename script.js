@@ -19,13 +19,13 @@ btns.forEach(function (btn) {
     }
 
     if (count > 0) {
-      value.style.color = "#FF8040";
+      value.style.color = "#fff";
     }
     if (count < 0) {
-      value.style.color = "red";
+      value.style.color = "#fff";
     }
     if (count === 0) {
-      value.style.color = "#222";
+      value.style.color = "#fff";
     }
     value.textContent = count;
   });
