@@ -8,7 +8,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Coiny&family=Fredoka+One&family=Open+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Paytone+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Fredoka+One&family=Jomhuria&family=Open+Sans&family=Rammetto+One&family=Roboto&family=Staatliches&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Candal&display=swap");
 *,
 ::after,
 ::before {
@@ -60,16 +60,18 @@ main {
 .btn {
   text-transform: uppercase;
   background: transparent;
-  color: rgba(115, 114, 136, 0.8);
-  padding: 0.375rem 1.15rem;
+  color: rgba(140, 146, 165, 0.8);
+  padding: 0.4rem 1.1rem;
   letter-spacing: var(--spacing);
   display: inline-block;
   transition: var(--transition);
   font-size: 1.5rem;
-  font-family: "Hammersmith One", sans-serif;
+  text-align: center;
+  margin: auto;
+  font-family: "Candal", sans-serif;
   border: 2px solid rgb(156, 155, 155);
   cursor: pointer;
-  box-shadow: 0 1px 3px rgba(255, 255, 255, 0.2);
+  box-shadow: 2px 2px 8px rgba(80, 79, 79, 0.2);
   border-radius: 7px;
   margin: 0.5rem;
   outline: none;
@@ -77,7 +79,13 @@ main {
 
 .btn:hover {
   color: white;
-  background: rgba(116, 115, 115, 0.5);
+  background: rgba(155, 153, 153, 0.5);
+}
+
+.btn:active {
+  background-color: rgba(155, 153, 153, 0.5);
+  box-shadow: rgba(155, 153, 153, 0.5);
+  transform: translateY(4px);
 }
 
 .wrapper {
