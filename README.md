@@ -34,7 +34,10 @@
 
 <a href=#100days>![#100DaysOfCode](Assets/inter-100hash.png)</a>  
 
-<a href=#100days>![Under Construction](Assets/lorem-text.png)</a>
+### Day 10: February 15, 2021
+- I drink a lot of coffee and I love dogs, so I made a counter for the amount of coffee I drink.
+  
+- For the background, I used stock video footage from <a href="https://coverr.co/">Coverr</a>.
 
 #
 
@@ -57,7 +60,7 @@ open index.html
 
 <a href="https://emjose.github.io/coffee-counter/">![Live Site](Assets/inter-live-site.png)</a>  
 
-<a href="https://emjose.github.io/coffee-counter/">![Under Construction](Assets/lorem-live.png)</a>
+<a href="https://emjose.github.io/coffee-counter/">![Live Site](Assets/010-counter.gif)</a>
 
 #
 
@@ -65,7 +68,13 @@ open index.html
 
 <a href=#resources>![Resources](Assets/inter-resources.png)</a>  
 
-<a href=#resources>![Under Construction](Assets/lorem-text.png)</a>
+- #### [Google Fonts](https://fonts.google.com/)
+
+- #### [Pexels Stock Video Footage](https://www.pexels.com/videos)
+
+- #### [Coverr Stock Video Footage](https://coverr.co/)
+  
+- #### [Counter Tutorial](https://youtu.be/c5SIG7Ie0dM?t=1826) by [Coding Addict](https://www.youtube.com/channel/UCMZFwxv5l-XtKi693qMJptA)
 
 #
 
