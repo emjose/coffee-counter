@@ -37,6 +37,7 @@
 ### Day 10: February 15, 2021
 
 -   I drink a lot of coffee and I love dogs, so I made a counter for the amount of coffee I drink.
+
 -   For the background, I used stock video footage from <a href="https://coverr.co/">Coverr</a>.
 
 #
@@ -47,13 +48,13 @@
 
 #### Git clone and cd into the repo folder:
 
-```
+```console
 git clone git@github.com:emjose/coffee-counter.git && cd coffee-counter
 ```
 
 #### Run the command:
 
-```
+```console
 open index.html
 ```
 
