@@ -1,161 +1,220 @@
-@import url("https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Francois+One&family=Paytone+One&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Paytone+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Fira+Sans:wght@700&family=Francois+One&family=Hammersmith+One&family=Paytone+One&family=Russo+One&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Fira+Sans:wght@700&family=Francois+One&family=Paytone+One&family=Russo+One&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Francois+One&family=Paytone+One&family=Russo+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Coiny&family=Fredoka+One&family=Open+Sans&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Paytone+One&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Fredoka+One&family=Jomhuria&family=Open+Sans&family=Rammetto+One&family=Roboto&family=Staatliches&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Candal&display=swap");
+
+:root {
+	--white: #fff;
+	--black: #000;
+	--body-color: #ccccbb;
+	--blue-1: rgba(16, 57, 170, 0.737);
+	--blue-2: rgb(59, 98, 206);
+	--blue-3: rgba(23, 78, 228, 0.849);
+	--blue-4: rgb(51, 86, 180);
+	--banner-color: rgba(255, 255, 255, 0.25);
+	--button-border: 2px solid rgb(89, 102, 137);
+	--button-background: rgba(236, 236, 236, 0.783);
+	--hover-border: 2px solid var(--blue-2);
+	--github-fill: var(--blue-3);
+	--github-color: var(--body-color);
+	--github-focus: var(--black);
+	--coiny: "Coiny", cursive;
+	--candal: "Candal", sans-serif;
+	--fira-sans: "Fira Sans", sans-serif;
+	--hammersmith: "Hammersmith One", sans-serif;
+}
+
 *,
 ::after,
 ::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
+
 body {
-  /* font-family: "Roboto", sans-serif; */
-  font-family: "Hammersmith One", sans-serif;
-  line-height: 1;
-  font-size: 1rem;
+	background-color: var(--body-color);
+	font-family: var(--hammersmith);
+	line-height: 1;
+	font-size: 1rem;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
-ul {
-  list-style-type: none;
-}
-a {
-  text-decoration: none;
-}
-h1,
-h2,
-h3,
-h4 {
-  letter-spacing: var(--spacing);
-  text-transform: capitalize;
-  line-height: 1.25;
-  margin-bottom: 0.75rem;
-  font-family: "Roboto", sans-serif;
-}
+
 .title {
-  font-size: 3rem;
-  /* color: rgba(36, 50, 141, 0.6); */
-  color: rgba(16, 57, 170, 0.6);
-  font-family: "Coiny", cursive;
+	font-size: 40px;
+	color: var(--blue-1);
+	font-family: var(--coiny);
 }
 
 main {
-  min-height: 150vh;
-  display: grid;
-  place-items: center;
+	min-height: 150vh;
+	display: grid;
+	place-items: center;
 }
+
 /* default min-height: 100vh */
 
 #value {
-  font-size: 6vw;
-  font-family: "Fira Sans", sans-serif;
-  color: rgba(255, 255, 255);
-}
-.btn {
-  text-transform: uppercase;
-  background: transparent;
-  color: rgba(140, 146, 165, 0.8);
-  padding: 0.4rem 1.1rem;
-  letter-spacing: var(--spacing);
-  display: inline-block;
-  transition: var(--transition);
-  font-size: 1.5rem;
-  text-align: center;
-  margin: auto;
-  font-family: "Candal", sans-serif;
-  border: 2px solid rgb(156, 155, 155);
-  cursor: pointer;
-  box-shadow: 2px 2px 8px rgba(80, 79, 79, 0.2);
-  border-radius: 7px;
-  margin: 0.5rem;
-  outline: none;
+	font-size: 50px;
+	font-family: var(--fira-sans);
+	color: var(--white);
 }
 
-.btn:hover {
-  color: white;
-  background: rgba(155, 153, 153, 0.5);
+.btn,
+#reset,
+#increase-full,
+#decrease-full {
+	width: 130px;
+	background: var(--button-background);
+	border: var(--button-border);
+	color: var(--blue-4);
+	padding: 3px 8px 5px;
+	display: inline-block;
+	transition: var(--transition);
+	font-family: var(--candal);
+	font-size: 1.25rem;
+	text-align: center;
+	text-transform: uppercase;
+	cursor: pointer;
+	border-radius: 6px;
+	margin: 0.5rem;
+	outline: none;
+}
+
+#decrease-short,
+#increase-short {
+	display: none;
+	width: 40px;
+	padding: 2px 8px;
+}
+
+.btn:active,
+#reset:hover,
+#reset:focus,
+#increase-full:hover,
+#increase-short:hover,
+#decrease-full:hover,
+#decrease-short:hover,
+#increase-full:focus,
+#increase-short:focus,
+#decrease-full:focus,
+#decrease-short:focus {
+	color: var(--white);
+	background: var(--blue-2);
+	border: var(--hover-border);
 }
 
 .btn:active {
-  background-color: rgba(155, 153, 153, 0.5);
-  box-shadow: rgba(155, 153, 153, 0.5);
-  transform: translateY(4px);
+	transform: translateY(4px);
+}
+
+.wrapper,
+.video-container,
+.video-overlay,
+.video-container video,
+.video-container:after {
+	position: absolute;
 }
 
 .wrapper {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  margin-bottom: 0;
+	width: 100%;
+	height: 100%;
+	margin-bottom: 0;
 }
 
 .video-container {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -2;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  filter: brightness(115%);
-}
-
-.video-container:after {
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: block;
-  content: "";
-  width: 100%;
-  height: auto;
-}
-
-.video-container video {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 100vw;
-  height: 56.25vw;
-  min-width: 177.6vh;
-  min-height: 100vh;
-  transform: translate(-50%, -50%);
+	top: 0;
+	left: 0;
+	z-index: -2;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	filter: brightness(115%);
 }
 
 .video-overlay {
-  position: relative;
-  top: 70%;
-  margin-bottom: 0;
-  padding: 20px 10px;
-  bottom: 0;
-
-  align-items: center;
-  text-align: center;
-
-  background: rgba(255, 255, 255, 0.25);
-  box-shadow: 0 50px 32px 50px rgba(185, 185, 185, 0.37);
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  backdrop-filter: blur(2px);
-  -webkit-backdrop-filter: blur(2px);
-  flex-direction: column;
-  font-size: 1rem;
-  text-transform: uppercase;
+	bottom: 0;
+	width: 100%;
+	margin-bottom: 0;
+	padding: 16px 10px 10px;
+	text-align: center;
+	background: var(--banner-color);
+	backdrop-filter: blur(2px);
+	-webkit-backdrop-filter: blur(2px);
+	flex-direction: column;
+	text-transform: uppercase;
 }
 
-h1 {
-  margin: 0;
+.video-container video {
+	top: 50%;
+	left: 50%;
+	width: 100vw;
+	height: 56.25vw;
+	min-width: 177.6vh;
+	min-height: 100vh;
+	transform: translate(-50%, -50%);
 }
 
-p {
-  margin-top: 10px;
-  font-weight: 100;
-  text-decoration: capitalize;
+.video-container:after {
+	top: 0;
+	left: 0;
+	display: block;
+	content: "";
+	width: 100%;
+	height: auto;
+}
+
+.github-corner:focus svg path {
+	fill: var(--github-focus);
+}
+
+.github-corner:focus .octo-arm,
+.github-corner:focus .octo-body {
+	fill: var(--github-color);
+}
+
+.github-corner:focus .octo-arm,
+.github-corner:hover .octo-arm {
+	animation: octocat-wave 560ms ease-in-out;
+}
+
+@keyframes octocat-wave {
+	0%,
+	100% {
+		transform: rotate(0);
+	}
+
+	20%,
+	60% {
+		transform: rotate(-25deg);
+	}
+
+	40%,
+	80% {
+		transform: rotate(10deg);
+	}
+}
+
+@media (max-width: 470px) {
+	.github-corner,
+	#decrease-full,
+	#increase-full {
+		display: none;
+	}
+
+	#decrease-short,
+	#increase-short {
+		display: inline-block;
+	}
+
+	#reset {
+		width: 100px;
+	}
+
+	.title {
+		font-size: 30px;
+	}
 }
