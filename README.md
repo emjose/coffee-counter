@@ -28,6 +28,8 @@
 -   [Resources](#resources)
 -   [Let's Connect!](#lets-connect)
 
+<br>
+
 #
 
 <p id="100days"><p>
@@ -39,6 +41,10 @@
 -   I drink a lot of coffee and I love dogs, so I made a counter for the amount of coffee I drink.
 
 -   For the background, I used stock video footage from <a href="https://coverr.co/">Coverr</a>.
+
+-   **September 2022 Update**: For accessibility, the light text colors were changed to darker hues.
+
+<br>
 
 #
 
@@ -58,6 +64,8 @@ git clone git@github.com:emjose/coffee-counter.git && cd coffee-counter
 open index.html
 ```
 
+<br>
+
 #
 
 <p id="live-site"><p>
@@ -65,6 +73,12 @@ open index.html
 <a href="https://emjose.github.io/coffee-counter/">![Live Site](https://res.cloudinary.com/dn1e07eul/image/upload/v1659389947/Readme%20Headers/inter-live-site_ngkqcf.png)</a>
 
 <a href="https://emjose.github.io/coffee-counter/">![Live Site](Assets/010-counter.gif)</a>
+
+• The **[Coffee Counter](https://emjose.github.io/coffee-counter/)** is responsive and keyboard-navigable.
+
+• The **[Coffee Counter](https://emjose.github.io/coffee-counter/)** is a [progressive web app](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps).
+
+<br>
 
 #
 
@@ -77,9 +91,12 @@ open index.html
 -   #### [Pexels Stock Video Footage](https://www.pexels.com/videos)
 
 -   #### [Coverr Stock Video Footage](https://coverr.co/)
+
 -   #### [Counter Tutorial](https://youtu.be/c5SIG7Ie0dM?t=1826) by [Coding Addict](https://www.youtube.com/channel/UCMZFwxv5l-XtKi693qMJptA)
 
 -   #### [My blog on how I created my Github READMEs](https://emmanueljose.medium.com/readme-a-makeover-story-b9c7be37a6de?sk=7ae6623d365409d875753e4604e42ffd)
+
+<br>
 
 #
 
